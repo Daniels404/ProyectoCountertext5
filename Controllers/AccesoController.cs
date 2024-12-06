@@ -7,6 +7,7 @@ using ProyectoCountertext4.Data;
 
 using ProyectoCountertext4.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProyectoCountertext4.Controllers
 {
