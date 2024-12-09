@@ -136,5 +136,9 @@ namespace ProyectoCountertext4.Data
             modelBuilder.Entity<Proveedor>().ToTable("Proveedor");
         }
 
+        public async Task<bool> SaveAsync()
+        {
+            return await SaveChangesAsync() > 0;
+        }
     }
 }
