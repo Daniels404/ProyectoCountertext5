@@ -7,6 +7,7 @@ namespace ProyectoCountertext4.Controllers
 {
     [ApiController]
     [Route("api/controller")]
+    [Authorize]
     public class AdministradorController : ControllerBase
     {
         private readonly IAdministrador _administrador;

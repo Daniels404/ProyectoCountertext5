@@ -136,9 +136,5 @@ namespace ProyectoCountertext4.Data
             modelBuilder.Entity<Proveedor>().ToTable("Proveedor");
         }
 
-        internal async Task SaveAsync()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

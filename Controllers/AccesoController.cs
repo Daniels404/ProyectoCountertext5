@@ -15,7 +15,7 @@ namespace ProyectoCountertext4.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
-    public class AccesoController : Controller
+    public class AccesoController : ControllerBase
     {
         private readonly CounterTexDBContext _counterTexDBContext;
         public AccesoController(CounterTexDBContext counterTexDBContext)
