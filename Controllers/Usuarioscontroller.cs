@@ -7,7 +7,7 @@ namespace ProyectoCountertext4.Controllers
 {
 
     [Authorize]
-    public class Usuarioscontroller : Controller
+    public class Usuarioscontroller : ControllerBase
     {
         private readonly IUsuarios _usuarios;
 
