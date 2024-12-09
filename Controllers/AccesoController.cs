@@ -14,8 +14,8 @@ namespace ProyectoCountertext4.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
-    public class AccesoController : ControllerBase
+
+    public class AccesoController : Controller
     {
         private readonly CounterTexDBContext _counterTexDBContext;
         public AccesoController(CounterTexDBContext counterTexDBContext)
@@ -27,6 +27,11 @@ namespace ProyectoCountertext4.Controllers
         public IActionResult Registrarse()
         {
             return View();
+        }
+
+        private IActionResult View()
+        {
+            throw new NotImplementedException();
         }
 
         [HttpPost]
